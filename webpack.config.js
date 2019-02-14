@@ -1,8 +1,10 @@
-var path = require('path');
+const path = require('path');
+
 module.exports = {
-    entry: './frontend/index.jsx',
+    context: __dirname,
+    entry: './frontend/hooked.jsx',
     output: {
-        path: path.resolve(__dirname),
+        path: path.resolve(__dirname, 'app', 'assets', 'javascripts'),
         filename: 'bundle.js'
     },
     module: {
@@ -13,14 +15,14 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     query: {
-                        presets: ["@babel/env", "@babel/react"]
+                        presets: ['@babel/env', '@babel/react']
                     }
-                }
+                },
             }
         ]
     },
+    devtool: 'source-map',
     resolve: {
-        extensions: ['.js', '.jsx', '*']
-    },
-    devtool: 'source-map'
-}
+        extensions: [".js", ".jsx", "*"]
+    }
+};
