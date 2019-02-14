@@ -1,5 +1,7 @@
 # Hooked
 
+    An app for crochet enthusiasts to browse projects, communicate with other enthusiuasts, and share!
+    
 ## Technologies Used
 
 ## Noteworthy Features
