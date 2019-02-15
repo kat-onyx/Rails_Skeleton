@@ -12,5 +12,3 @@
 * Commenting
 * Likes
 * Saved Projects
-
-
